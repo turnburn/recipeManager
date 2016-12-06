@@ -1,0 +1,46 @@
+html  
+	head
+		title= "COMP2406 Assignment 5"
+		link(rel='stylesheet', href='/style.css')
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+
+
+		
+	body
+		h1= "Assignment 5 - Brandon Turner"
+
+		
+		label(for='recipeSelect') Recipe :
+		select#recipeSelect
+		br
+		button#recipeViewButton View
+			
+
+		hr
+
+		label(for='recipeName') Name :
+		br
+		input#recipeName
+		br
+		label(for='recipeDuration') Duration :
+		br
+		input#recipeDuration
+		br
+		label(for='recipeIngredients') Ingredients :
+		br
+		textarea#recipeIngredients(class='ingredientsField')
+		br
+		label(for='recipeDirections') Directions :
+		br
+		textarea#recipeDirections(class = 'directionsField')
+		br
+		label(for='recipeNotes') Notes :
+		br
+		textarea#recipeNotes(class='notesField')
+		br
+		button#recipeSubmitButton Submit
+
+	script(src="recipePage.js")
+	div
+
+		p#confirmed(class='check') &#10004
